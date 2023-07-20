@@ -1,40 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>C to F</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Currency Convertor</title>
 </head>
 <body>
-    
-    <div class="login-box">
-        <h2>Celsius to fahrenheit conveter</h2>
-        <form>
-          <div class="user-box">
-            <input type="text"  id ="Celsius"name="" required="">
-            <label>Enter value in Celsius</label>
-          </div>
-           <h4 style="color: aliceblue;">Result in fahrenheit:</h4> 
-          <div class="user-box" id="abc" style="background-color:white;">
-          </div>
-        <button type="submit" onclick="converter()">
-            submit
-          </button>
-        </form>
+    <div class="container">
+        <h1>Currency Convertor</h1>
+        <div class="box">
+            <div class="left-box">
+                <select name="currency" class="currency">
+                    
+                </select>
+                <input type="number" name="" id="input">
+            </div>
+            <div class="right-box">
+                <select name="currency" class="currency"></select>
+                <input type="number" name="" id="result">
+            </div>
+        </div>
+        <div class="btn">
+            <button id="btn">Convert</button>
+        </div>
         
     </div>
-    
-<script>
-  function converter(){  
-  const val=Number(document.getElementById("Celsius").value);
-  console.log(val);
-  const farhen=((val*9)/5)+32;
-  const abc=document.getElementById("abc");
-  abc.innerHTML=farhen;
-  }
-</script>
+    <script src="app.js"></script>
 </body>
 </html>
